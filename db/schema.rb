@@ -10,17 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_10_140832) do
+ActiveRecord::Schema.define(version: 2020_10_10_220847) do
 
   create_table "rice", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "name"
     t.integer "condition"
     t.integer "hard"
-    t.integer "time"
+    t.integer "stickiness"
     t.text "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "stickiness"
   end
 
 end
