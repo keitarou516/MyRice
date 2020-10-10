@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    # get '/' => 'rices#index'
-    post '/' => 'rices#create'
+    get '/rices' => 'rices#index'
+    post '/rices' => 'rices#create'
 
 end
