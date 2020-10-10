@@ -51,4 +51,5 @@ production:
   <<: *default
   database: MyRice_production
   username: MyRice
-  password: <%= ENV['MYRICE_DATABASE_PASSWORD'] %>
+  # password: <%= ENV['MYRICE_DATABASE_PASSWORD'] %>
+  password: butcher317
