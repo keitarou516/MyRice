@@ -11,8 +11,16 @@
 
 
 class RicesController < ApplicationController
+
+    def index
+        answers = [1,1,1]
+        rices = Rice.where(condition: answers[0]).where(hard: answers[1]).where(time: answers[2])
+        render :json => rices
+    end
+
     def create
         # answers = {answer1: 1, answer2: 1, answer3: 1} #paramsに変更する
+
         answers = params[:selections]
         puts "selections = #{params}"
 
