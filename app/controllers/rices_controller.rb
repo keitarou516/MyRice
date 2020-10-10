@@ -1,0 +1,2 @@
+class RicesController < ApplicationController
+end
