@@ -1,6 +1,6 @@
 require "csv"
 
-CSV.foreach('db/csv/content.csv', headers: true) do |row|
+CSV.foreach('db/csv/rice.csv', headers: true) do |row|
   Rice.create(
     condition: row['condition'],
     hard: row['hard'],
