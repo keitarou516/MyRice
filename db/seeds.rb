@@ -5,7 +5,7 @@ CSV.foreach('db/csv/rice.csv', headers: true) do |row|
     condition: row['condition'],
     hard: row['hard'],
     time: row['time'],
-    stickness: row['stickness'],
+    stickiness: row['stickiness'],
     url: row['url']
   )
 end
