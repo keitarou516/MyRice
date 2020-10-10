@@ -63,3 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails'
 gem 'mechanize'
 gem 'pry-rails'
+
+group :production do
+  gem 'rails_12factor'
+end
