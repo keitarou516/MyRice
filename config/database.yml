@@ -15,7 +15,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: <%= ENV.fetch("PASSWORD") { "test" } %>
-  # socket: /tmp/mysql.sock
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -51,4 +51,4 @@ production:
   <<: *default
   database: MyRice_production
   username: MyRice
-  password: <%= ENV['MYRICE_DATABASE_PASSWORD'] %>
+  password: <%= ENV.fetch("PASSWORD") { "test" } %>
